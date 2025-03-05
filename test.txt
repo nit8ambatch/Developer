@@ -1,0 +1,11 @@
+<div id="myControlTemplate" data-type="text/x-handlebars-template">
+    
+        <h3>Control Template (using "control" expression)</h3>
+        {{control sap-ui-type="sap.ui.commons.Label" design="Bold" text="{/title}"}}
+        <ul>
+        {{#each path="/persons"}}
+            <li>{{control sap-ui-type="sap.ui.commons.TextView" text="{lastName}, {firstName}"}}</li>
+        {{/each}}
+        </ul>
+    
+    </div>
